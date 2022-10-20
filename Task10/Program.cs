@@ -9,6 +9,13 @@ int SecondDigit (int Number)
 }
 
 Console.WriteLine("Введите целое трехзначное число: ");
-int Num = Convert.ToInt32(Console.ReadLine());
-int resalt = SecondDigit (Num);
+int num = Convert.ToInt32(Console.ReadLine());
+if (num >= 1000)
+{
+    Console.WriteLine("Вы ввели не трехзначное число!");
+}
+else
+{
+int resalt = SecondDigit (num);
 Console.WriteLine(resalt);
+}
